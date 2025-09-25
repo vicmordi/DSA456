@@ -2,7 +2,6 @@
 
 def function1(number):
 	total = 0                 #1
- 
 	for i in range(number):   #n
 		x = i + 1             #2n
 		total += x * x        #3n   
@@ -14,7 +13,6 @@ T(n) is O(n)
 
 
 #Function2
-
 def function2(number):
 	return (number * (number + 1) * (2 * number + 1)) // 6     #6
 
@@ -23,7 +21,6 @@ T(n) is O(1)
 
 
 #Function3
-
 def function3(list):
 	n = len(list)                    #1
 	for i in range(n - 1):           #n-1
