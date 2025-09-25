@@ -1,7 +1,6 @@
 #Function1
 
 def function1(number):
-
 	total = 0                 #1
 	
 	for i in range(number):   #n
