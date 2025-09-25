@@ -1,9 +1,13 @@
 #Function1
 
 def function1(number):
+
 	total = 0                 #1
+	
 	for i in range(number):   #n
+	
 		x = i + 1             #2n
+		
 		total += x * x        #3n   
  
 	return total              #1
