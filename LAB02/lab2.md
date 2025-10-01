@@ -36,6 +36,7 @@ def function3(list):
 T(n) = 1 + n -1 + n-1 + n-2 + ....... + 1 + 2 * n-1 + n-2 + ....... + 1 + n-1 + n-2 + ....... + 1 + n-1 + n-2 + ....... + 1
 T(n) is O(n^2)
 
+
 #Function4
 
 def function4(number):
