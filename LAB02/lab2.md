@@ -1,51 +1,71 @@
 #Function1
 
+
 def function1(number):
+
 	total = 0                 #1
- 
+	
 	for i in range(number):   #n
+	
 		x = i + 1             #2n
+		
 		total += x * x        #3n   
  
 	return total              #1
 
 T(n) = 1 + n + 2n + 3n + 1
+
 T(n) is O(n)
 
 
 #Function2
 
 def function2(number):
+
 	return (number * (number + 1) * (2 * number + 1)) // 6     #6
 
 T(n)= 6
+
 T(n) is O(1)
 
 
 #Function3
 
 def function3(list):
+
 	n = len(list)                    #1
+	
 	for i in range(n - 1):           #n-1
+	
 		for j in range(n - 1 - i):   #(n-1) + (n-2) + ....... + 1
+		
 			if list[j] > list[j+1]:  #2 * (n-1) + (n-2) + ....... + 1
+			
 				tmp = list[j]        #(n-1) + (n-2) + ....... + 1
+				
 				list[j] = list[j+1]  #(n-1) + (n-2) + ....... + 1
+				
 				list[j + 1] = tmp    #(n-1) + (n-2) + ....... + 1
 
 T(n) = 1 + n -1 + n-1 + n-2 + ....... + 1 + 2 * n-1 + n-2 + ....... + 1 + n-1 + n-2 + ....... + 1 + n-1 + n-2 + ....... + 1
+
 T(n) is O(n^2)
 
 
 #Function4
 
 def function4(number):
+
 	total = 1                      #1
+	
 	for i in range(1, number):     #n
+	
 		total *= i + 1             #3n
+		
 	return total                   #1
 
 T(n) = 1 + n + 3n + 1
+
 T(n) is O(n)
 
 
