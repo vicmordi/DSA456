@@ -1,5 +1,5 @@
-#Analysis
-#Function1
+Analysis
+Function1
 
 def function1(value, number):
 
@@ -15,11 +15,11 @@ def function1(value, number):
 	
 		return value * function1(value, number-1)     #2 + T(n-1)
 
-#T(n) = 1 + 1 + 1 + 1 + 2 + T(n-1) = 6 + T(n-1)
+T(n) = 1 + 1 + 1 + 1 + 2 + T(n-1) = 6 + T(n-1)
 
-#T(n-1) = 6 + T(n-2)
+T(n-1) = 6 + T(n-2)
 
-#T(n-2) = 6 + T(n-3)
+T(n-2) = 6 + T(n-3)
 
 ...............
 
