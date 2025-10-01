@@ -2,17 +2,11 @@ Analysis
 Function1
 
 def function1(value, number):
-
 	if (number == 0):      #1
-	
-		return 1           #1
-		
+		return 1           #1	
 	elif (number == 1):    #1
-	
-		return value       #1
-		
+		return value       #1	
 	else:
-	
 		return value * function1(value, number-1)     #2 + T(n-1)
 
 T(n) = 1 + 1 + 1 + 1 + 2 + T(n-1) = 6 + T(n-1)
