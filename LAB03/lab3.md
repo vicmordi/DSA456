@@ -31,6 +31,8 @@ def function1(value, number):
 
 #T(n) is O(n)
 
+
+
 #Function2
 
 def recursive_function2(mystring,a, b):
@@ -68,6 +70,8 @@ def function2(mystring):
 #T(n) = 6(n-1) + 2 = 6n - 6 + 2 = 6n -4
 
 #T(n) is O(n)
+
+
 
 
 #Function3
