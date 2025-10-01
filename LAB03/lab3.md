@@ -2,69 +2,109 @@
 #Function1
 
 def function1(value, number):
+
 	if (number == 0):      #1
+	
 		return 1           #1
+		
 	elif (number == 1):    #1
+	
 		return value       #1
+		
 	else:
+	
 		return value * function1(value, number-1)     #2 + T(n-1)
 
 #T(n) = 1 + 1 + 1 + 1 + 2 + T(n-1) = 6 + T(n-1)
+
 #T(n-1) = 6 + T(n-2)
+
 #T(n-2) = 6 + T(n-3)
+
 ...............
+
 #T(1) = 2
 
 #T(n) = 6 + T(n-1) = 6 + 6 + T(n-2) = 6 + 6 + 6 + T(n-3)....... T(1)
+
 #T(n) = 6(n-1) + 2 = 6n - 6 + 2 = 6n - 4
+
 #T(n) is O(n)
 
 #Function2
 
 def recursive_function2(mystring,a, b):
+
 	if(a >= b ):                            #1
+	
 		return True                         #1
+		
 	else:
+	
 		if(mystring[a] != mystring[b]):     #1
+		
 			return False                    #1
+			
 		else:
+		
 			return recursive_function2(mystring,a+1,b-1)     #2 + T(n-1)
  
 def function2(mystring):
+
 	return recursive_function2(mystring, 0,len(mystring)-1) #6n -4 + 2 T(n) is O(n)
 
 #T(n) = 1 + 1 + 1 + 1 + 2 + T(n-1) = 6 + T(n-1)
+
 #T(n-1) = 6 + T(n-2)
+
 #T(n-2) = 6 + T(n-3)
+
 ..........
+
 #T(1) = 2
 
 #T(n) = 6 + T(n-1) = 6 + 6 + T(n-2) = 6 + 6 + 6 + T(n-3).........T(1)
+
 #T(n) = 6(n-1) + 2 = 6n - 6 + 2 = 6n -4
+
 #T(n) is O(n)
 
 
 #Function3
 
 def function3(value, number):
+
     if (number == 0):             # 1
+	
         return 1                  # 1
+		
     elif (number == 1):           # 1
+	
         return value              # 1
+		
     else:
+	
         half = number // 2        # 2
+		
         result = function3(value, half)   # 1 + T(n/2)
+		
         if (number % 2 == 0):     # 2
+		
             return result * result        # 1
+			
         else:
+		
             return value * result * result   # 2
 
 
 #T(n) = 1 + 1 + 1 + 1 + 2 + 1 + T(n/2) + 2 + 1 + 2 = 12 + T(n/2)
+
 #T(n/2) = 12 + T(n/4)
+
 #T(n/4) = 12 + T(n/8)
 
 #T(n) = 12 + T(n/2) = 12 + 12 + T(n/4) = 12 + 12 + 12 + T(n/8).......
+
 #T(n) is O(logn)
 
 
